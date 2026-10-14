@@ -1,19 +1,75 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <header>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hero Layout Concept</title>
+  <link rel="stylesheet" href=".styles/main.css">
+</head>
+<body>
+
+  <!-- ------ HEADER SECTION ------ -->
+  <!-- Note: Your CSS targets a custom 'heading' tag, so I've used that here -->
+  <heading>
+    <div style="background-color: var(--sky-dive); padding: var(--padding-m);">
+      <strong>Logo / Brand</strong>
+    </div>
+    <div style="background-color: var(--glacial-turquoise-shimmer); padding: var(--padding-m); text-align: right;">
+      <nav>Navigation Links</nav>
+    </div>
+  </heading>
+
+  <!-- ------ HERO SECTION ------ -->
+  <section id="hero">
+    <!-- This wrapper matches your fixed layout and contains your grid-template-areas -->
+    <div id="hero-content">
       
-    </header>
-    
-    <main>
+      <!-- Grid Area: number -->
+      <div class="hero-number" style="background-color: var(--vibrant-marigold); padding: var(--padding-l); font-size: var(--font-xxl); line-height: var(--lh-heading); text-align: center;">
+        01
+      </div>
       
-    </main>
-    
-    <footer>
+      <!-- Grid Area: description -->
+      <div class="hero-desc" style="background-color: var(--clover-mist); padding: var(--padding-m); font-size: var(--font-md); line-height: var(--lh-body);">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </div>
       
-    </footer>
-  </body>
+      <!-- Grid Area: button1 -->
+      <button class="btn-primary" style="background-color: var(--microprose-red); color: white; border: none; padding: var(--padding-m); font-size: var(--font-text); cursor: pointer;">
+        Primary Action
+      </button>
+      
+      <!-- Grid Area: button2 -->
+      <button class="btn-sec" style="background-color: var(--bamboo-grass-green); color: white; border: none; padding: var(--padding-m); font-size: var(--font-text); cursor: pointer;">
+        Secondary Action
+      </button>
+      
+    </div>
+  </section>
+
+  <!-- ------ INTRODUCTION SECTION ------ -->
+  <section id="introduction" style="background-color: #f4f4f4; margin-top: 100vh; padding: var(--padding-l); gap: var(--padding-m);">
+    <div style="background-color: var(--linden-green); padding: var(--padding-l);">
+      <h2 style="font-size: var(--font-xl); line-height: var(--lh-heading); margin-bottom: var(--padding-s);">Main Intro Content</h2>
+      <p style="font-size: var(--font-text); line-height: var(--lh-body);">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      </p>
+    </div>
+    <div style="background-color: var(--brassy); padding: var(--padding-l);">
+      <h3 style="font-size: var(--font-md); line-height: var(--lh-heading); margin-bottom: var(--padding-s);">Sidebar Info</h3>
+      <p style="font-size: var(--font-text); line-height: var(--lh-body);">
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
+  </section>
+
+  <!-- ------ FOOTER SECTION ------ -->
+  <footer>
+    <div style="background-color: #222; color: #fff; padding: var(--padding-m);">Footer Col 1</div>
+    <div style="background-color: #333; color: #fff; padding: var(--padding-m);">Footer Col 2</div>
+    <div style="background-color: #444; color: #fff; padding: var(--padding-m);">Footer Col 3</div>
+    <div style="background-color: #555; color: #fff; padding: var(--padding-m);">Footer Col 4</div>
+  </footer>
+
+</body>
 </html>
