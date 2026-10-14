@@ -71,6 +71,10 @@ footer {
   grid-template-columns: 1fr;
 }
 
+#hero-img {
+  height: 60svh;
+}
+
 #hero-content {
   position: absolute;
   top: 50%;
