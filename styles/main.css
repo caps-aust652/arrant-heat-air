@@ -48,6 +48,7 @@
 /* ------ STRUCTURAL LAYOUT ------ */
 heading {
   position: sticky;
+  top: 0;
   height: 20svh;
   
   display: grid;
