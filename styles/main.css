@@ -1,0 +1,112 @@
+/* ------ RESET FUNCTIONs ------*/
+/* BOX SIZING */
+*, *::before, *::after {
+  /* Sets all elements to have the max box size of their border box*/
+  box-sizing: border-box;
+}
+
+/* MARGIN AND PADDING*/
+* {
+  /* Sets all elements margins to zero*/
+  margin: 0;
+  /* Sets all elements paddings to zero*/
+  padding: 0;
+}
+
+/* ------ ROOT STYLES ------ */
+/*GLOBAL VARIABLES*/
+:root {
+  /* Arrant gradient colors*/
+  --sky-dive: #5bbed3;
+  --glacial-turquoise-shimmer: #58bcbe;
+  --mint-leaf: #0db492;
+  --clover-mist: #65bd81;
+  --bamboo-grass-green: #8b9e4f;
+  --linden-green: #c5bf71;
+  --brassy: #d2a727;
+  --vibrant-marigold: #f28920;
+  --strawberry-spinach-red: #fc3d23;
+  --microprose-red: #f0222c;
+
+  /* Standardized padding values*/
+  --padding-s: 0.5rem;
+  --padding-m: 1rem;
+  --padding-l: 1.5rem;
+  
+  /* Standardized font sizes*/
+  --font-text: clamp(1rem, 0.95rem + 0.25vw, 1.063rem);
+  --font-md: clamp(1.25rem, 1.18rem + 0.36vw, 1.333rem);
+  --font-lg: clamp(1.563rem, 1.45rem + 0.54vw, 2.369rem);
+  --font-xl: clamp(1.953rem, 1.78rem + 0.86vw, 2.369rem);
+  --font-xxl: clamp(2.441rem, 2.19rem + 1.25vw, 3.157rem);
+
+  /* Standardized line height values*/
+  --lh-body: 1.6;
+  --lh-heading: 1.2;
+}
+
+/* ------ STRUCTURAL LAYOUT ------ */
+heading {
+  position: sticky;
+  height: 20svh;
+  
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  z-index: 1000;
+}
+
+footer {
+  position: relative;
+  height: 30svh;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  z-index: 999;
+}
+
+#hero {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+#hero-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+    "number      number"
+    "description description"
+    "button1     button2";
+  gap: 16px;
+}
+
+@media (min-width: 768px) {
+  #hero-content {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "description description number number"
+      "button1     button2     number number";
+  }
+}
+
+.hero-number { grid-area: number; }
+.hero-desc { grid-area: description; }
+.btn-primary { grid-area: button1; }
+.btn-sec { grid-area: button2; }
+
+#introduction {
+  display: grid;
+  grid-template-columns: minmax(600px, 5fr) minmax(200px, 3fr);
+}
+
+@media ( max-width: 768px) {
+  #introduction {
+    display: grid;
+  }
+}
+
