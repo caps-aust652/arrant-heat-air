@@ -56,6 +56,17 @@ heading {
   z-index: 1000;
 }
 
+.heading-logo-wrapper {
+  position: relative;
+  height: auto;
+  width: auto;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 footer {
   position: relative;
   height: 30svh;
@@ -126,10 +137,10 @@ footer {
 .service-card {
   position: relative;
   height: clamp(360px, 30vw, 480px);
-  max-width: 280px;
+  max-width: 240px;
 
   display: grid;
-  grid-template-rows: 2fr 4fr 1fr;
+  grid-template-rows: 3fr 4fr 1fr;
 
   border-radius: 0.5rem;
   padding: var(--padding-m);
