@@ -115,6 +115,27 @@ footer {
   }
 }
 
+.services-track {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+
+  padding: var(--padding-m);
+}
+
+.service-card {
+  position: relative;
+  height: clamp(360px, 30vw, 480px);
+  max-width: 320px;
+
+  display: grid;
+  grid-template-rows: 2fr 4fr 1fr;
+
+  border-radius: 0.5rem;
+  padding: var(--padding-m);
+  overflow: hidden;
+}
+
 /* ------ ELEMENT STYLES ------ */
 
 button {
