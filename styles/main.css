@@ -126,7 +126,7 @@ footer {
 .service-card {
   position: relative;
   height: clamp(360px, 30vw, 480px);
-  max-width: 320px;
+  max-width: 280px;
 
   display: grid;
   grid-template-rows: 2fr 4fr 1fr;
