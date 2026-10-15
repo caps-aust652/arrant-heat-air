@@ -139,6 +139,8 @@ button:active {
 }
 
 /* ------ FONT STYLES ------ */
+.text-no-wrap { whitespace: no-wrap; }
+
 .font-xxl {
   font-size: var(--font-xxl);
   color: var(--microprose-red);
