@@ -49,11 +49,16 @@
 heading {
   position: sticky;
   top: 0;
-  height: 20svh;
+  height: clamp(60px, 12vh, 100px);
   
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: auto 1fr 2fr;
   z-index: 1000;
+}
+
+heading > *:first-child {
+  height: 100%;
+  aspect-ratio: 1 / 1; 
 }
 
 .heading-logo-wrapper {
