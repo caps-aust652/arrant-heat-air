@@ -206,3 +206,7 @@ button:active {
   font-size: var(--font-xxl);
   color: var(--microprose-red);
 }
+
+.bold {
+  font-weight: 700;
+}
