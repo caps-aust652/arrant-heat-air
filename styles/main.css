@@ -196,7 +196,7 @@ button:active {
 }
 
 /* ------ FONT STYLES ------ */
-.text-no-wrap { whitespace: no-wrap; }
+.text-no-wrap { whitespace: nowrap; }
 
 .font-xxl {
   font-size: var(--font-xxl);
