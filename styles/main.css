@@ -126,7 +126,7 @@ footer {
   }
 }
 
-.services-track {
+#services-track {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 16px;
@@ -145,6 +145,26 @@ footer {
   border-radius: 0.5rem;
   padding: var(--padding-m);
   overflow: hidden;
+  box-shadow: 0 wp
+
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.service-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.service-body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 /* ------ ELEMENT STYLES ------ */
