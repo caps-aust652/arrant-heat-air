@@ -61,7 +61,7 @@ heading > *:first-child {
   aspect-ratio: 1 / 1; 
 }
 
-.heading-logo-wrapper {
+.heading-content-wrapper {
   position: relative;
   height: auto;
   width: auto;
@@ -71,6 +71,7 @@ heading > *:first-child {
   justify-content: center;
   align-items: center;
 }
+
 
 footer {
   position: relative;
