@@ -89,7 +89,7 @@ footer {
 }
 
 #hero-image {
-  height: 60svh;
+  object-fit: cover;
 }
 
 #hero-content {
