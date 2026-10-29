@@ -90,7 +90,6 @@ footer {
   position: relative;
   display: grid;
   grid-template-columns: 1fr;
-  max-height: 60svh;
   overflow: hidden;
 }
 
