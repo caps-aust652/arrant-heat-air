@@ -182,6 +182,11 @@ footer {
 }
 
 /* ------ ELEMENT STYLES ------ */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 
 button {
   display: inline-flex;
@@ -257,6 +262,7 @@ button {
 .hero-number {
   width: 14ch;
 }
+
 
 /* ------ FONT STYLES ------ */
 .text-no-wrap { white-space: nowrap; }
