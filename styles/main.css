@@ -90,6 +90,7 @@ footer {
   position: relative;
   display: grid;
   grid-template-columns: 1fr;
+  max-height: 80svh;
   overflow: hidden;
 }
 
@@ -98,6 +99,10 @@ footer {
   max-width: 1200px;
   margin: 0 auto;
   aspect-ratio: 4 / 3;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (min-width: 768px) {
