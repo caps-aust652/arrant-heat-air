@@ -52,13 +52,17 @@ heading {
   height: clamp(60px, 12vh, 100px);
   
   display: grid;
-  grid-template-columns: auto 1fr 2fr;
+  grid-template-columns: auto 1fr auto;
   z-index: 1000;
 }
 
 heading > *:first-child {
   height: 100%;
   aspect-ratio: 1 / 1; 
+}
+
+heading > *:second-child {
+  grid-column: 3;
 }
 
 .heading-content-wrapper {
@@ -86,10 +90,13 @@ footer {
   position: relative;
   display: grid;
   grid-template-columns: 1fr;
+  max-height: 60svh;
+  overflow: hidden;
 }
 
 #hero-image {
   object-fit: cover;
+  width: 100%;
 }
 
 #hero-content {
