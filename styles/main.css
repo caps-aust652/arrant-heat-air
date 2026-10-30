@@ -92,6 +92,7 @@ heading > *:nth-child(2) {
   text-decoration: none;
   color: grey;
   font-size: var(--font-md);
+  cursor: pointer;
 }
 
 #header-nav a:hover {
