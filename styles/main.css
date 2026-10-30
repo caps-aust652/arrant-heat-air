@@ -108,7 +108,7 @@ footer {
 }
 
 @media (min-width: 768px) {
-  .hero-container {
+  #hero-container {
     aspect-ratio: 16 / 9;
   }
 }
