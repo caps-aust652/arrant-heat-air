@@ -78,6 +78,30 @@ heading > *:nth-child(2) {
   align-items: center;
 }
 
+#header-nav {
+  position: relative;
+  padding: var(--padding-m);
+  width: auto;
+  
+  display: flex;
+  flex-direction: row;  
+  justify-content: space-evenly;
+}
+
+#header-nav a {
+  text-decoration: none;
+  color: grey;
+  font-size: var(--font-md);
+}
+
+#header-nav a:hover {
+  text-decoration: underline;
+}
+
+.gts-hover:hover { color: var(--glacial-turquoise-shimmer); }
+.ml-hover:hover { color: var(--mint-leaf); }
+.bbg-hover:hover { color: var(--bamboo-grass-green); }
+.ssr-hover:hover { color: var(--strawberry-spinach-red); }
 
 footer {
   position: relative;
