@@ -98,9 +98,9 @@ heading > *:nth-child(2) {
   text-decoration: underline;
 }
 
-.gts-hover:hover { color: var(--glacial-turquoise-shimmer) !important; }
-.ml-hover:hover { color: var(--mint-leaf) !important; }
-.bbg-hover:hover { color: var(--bamboo-grass-green) !important; }
+.sd-hover:hover { color: var(--sky-dive) !important; }
+.cl-hover:hover { color: var(--clover-mist) !important; }
+.vm-hover:hover { color: var(--vibrant-marigold) !important; }
 .ssr-hover:hover { color: var(--strawberry-spinach-red) !important; }
 
 footer {
