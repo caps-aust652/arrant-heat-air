@@ -98,10 +98,10 @@ heading > *:nth-child(2) {
   text-decoration: underline;
 }
 
-.gts-hover:hover { color: var(--glacial-turquoise-shimmer); }
-.ml-hover:hover { color: var(--mint-leaf); }
-.bbg-hover:hover { color: var(--bamboo-grass-green); }
-.ssr-hover:hover { color: var(--strawberry-spinach-red); }
+.gts-hover:hover { color: var(--glacial-turquoise-shimmer) !important; }
+.ml-hover:hover { color: var(--mint-leaf) !important; }
+.bbg-hover:hover { color: var(--bamboo-grass-green) !important; }
+.ssr-hover:hover { color: var(--strawberry-spinach-red) !important; }
 
 footer {
   position: relative;
