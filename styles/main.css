@@ -345,3 +345,50 @@ button {
 .bold {
   font-weight: 700;
 }
+
+/* ----- CARD BACKGROUND ------ */
+.stream-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.stream {
+  position: absolute;
+  height: 150%;
+  aspect-ratio: 1 / 1;
+  border-radius: 38% 62% 29% 71% / 58% 33% 67% 42%;
+}
+
+.animation-set-1 { animation: wave-flow 12s infinite linear; }
+.animation-set-2 { animation: wave-flow 14s infinite linear; }
+.animation-set-3 { animation: wave-flow 16s infinite linear; }
+
+.offset-0 { left: -10%; top: -40%; }
+.offset-1 { left: 0%; top: -50%; }
+.offset-2 { left: 10%; top: -60%; }
+.offset-3 { left: -10%; top: -70%; }
+.offset-4 { left: 0%; top: -80%; }
+.offset-5 { left: 10%; top: -90%; }
+.offset-6 { left: -10%; top: -100%; }
+.offset-7 { left: 0%; top: -110%; }
+.offset-8 { left: 10%; top: -120%; }
+.offset-9 { left: 0%; top: -130%; }
+
+@keyframes wave-flow {
+  0% {
+    transform: translateX(0) rotate(0deg);
+  }
+  50% {
+    /* Push the wave horizontally while it is rotating to warp the gradient path */
+    transform: translateX(-25%) rotate(180deg);
+  }
+  100% {
+    transform: translateX(0%) rotate(360deg);
+  }
+}
