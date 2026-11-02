@@ -45,6 +45,18 @@
   --lh-heading: 1.2;
 }
 
+
+.sd-bg { background-color: var(--sky-dive); }
+.gts-bg { background-color: var(--glacial-turqouise-shimmer); }
+.ml-bg { background-color: var(--mint-leaf); }
+.cm-bg { background-color: var(--clover-mist); }
+.bgg-bg { background-color: var(--bamboo-grass-green); }
+.lg-bg { background-color: var(--linden-green); }
+.b-bg { background-color: var(--brassy); }
+.vm-bg { background-color: var(--vibrant-marigold); }
+.ssr-bg { background-color: var(--strawberry-spinach-red); }
+.mr-bg { background-color: var(--microprose-red); }
+
 /* ------ STRUCTURAL LAYOUT ------ */
 heading {
   position: sticky;
