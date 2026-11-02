@@ -346,6 +346,10 @@ button {
   box-shadow: 0 2px 4px -1px rgba(100, 116, 139, 0.1);
 }
 
+#header-btn {
+  margin: var(--padding-s);
+}
+
 .hero-number {
   width: 14ch;
 }
