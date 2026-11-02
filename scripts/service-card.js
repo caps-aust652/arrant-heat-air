@@ -41,6 +41,18 @@ const arrantServicesGrid = document.getElementById("services-track");
 
 arrantServicesGrid.innerHTML = arrantServices.map(service => `
   <div class="service-card">
+    <div class="stream-container">
+      <div class="stream mr-bg offset-0 animation-set-1"></div>
+      <div class="stream ssr-bg offset-1 animation-set-2"></div>
+      <div class="stream vm-bg offset-2 animation-set-3"></div>
+      <div class="stream b-bg offset-3 animation-set-1"></div>
+      <div class="stream lg-bg offset-4 animation-set-3"></div>
+      <div class="stream bgg-bg offset-5 animation-set-2"></div>
+      <div class="stream cm-bg offset-6 animation-set-1"></div>
+      <div class="stream ml-bg offset-7 animation-set-3"></div>
+      <div class="stream gts-bg offset-8 animation-set-2"></div>
+      <div class="stream sd-bg offset-9 animation-set-1"></div>
+    </div>
     <div class="service-header">
       <h3 class="service-name">${service.name}</h3>
       <p class="service-category">${service.category}</p>
