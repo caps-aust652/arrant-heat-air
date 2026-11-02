@@ -263,6 +263,10 @@ footer {
   flex-grow: 1;
 }
 
+.service-header, .service-content, .service-btn-wrapper {
+  z-index: 10;
+}
+
 /* ------ ELEMENT STYLES ------ */
 img {
   max-width: 100%;
