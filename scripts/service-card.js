@@ -1,13 +1,13 @@
 const arrantServices = [
   {
     name: "Lorem Ipsum Dolor",
-    category: "&#x2744; Cooling",
+    category: "&#x2744;&#xfe0f; Cooling",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     link: "/services/lorem-one"
   },
   {
     name: "Consectetur Adipiscing",
-    category: "&#x2600; Heating",
+    category: "&#x2600;&#xfe0f; Heating",
     description: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     link: "/services/lorem-two"
   },
@@ -19,13 +19,13 @@ const arrantServices = [
   },
   {
     name: "Tempor Incididunt",
-    category: "&#x2744; Cooling",
+    category: "&#x2744&#xfe0f; Cooling",
     description: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     link: "/services/lorem-four"
   },
   {
     name: "Ut Labore Et Dolore",
-    category: "&#x2600; Heating",
+    category: "&#x2600;&#xfe0f Heating",
     description: "Mollis pretium lorem primis senectus habitasse lectus scelerisque donec. Cubilia maecenas quisque sit efficitur habitant.",
     link: "/services/lorem-five"
   },
