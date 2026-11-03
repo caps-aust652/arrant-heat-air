@@ -253,8 +253,11 @@ footer {
 }
 
 .service-category {
-  border: 2px solid black;
-  border-radius: 50%;
+  border: 1px solid gray;
+  border-radius: 1rem;
+  padding: calc(var(--padding-s) / 2) var(--padding-s);
+  display: inline;
+  font-size: calc(var(--font-text) * 0.8);
 }
 
 .service-header, .service-content, .service-btn-wrapper {
