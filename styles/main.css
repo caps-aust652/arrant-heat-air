@@ -237,14 +237,12 @@ footer {
   max-width: 240px;
 
   display: grid;
-  grid-template-rows: 3fr 4fr 1fr;
+  grid-template-rows: 3fr auto 1fr;
 
   border: 5px solid black;
   border-radius: 0.5rem;
   padding: var(--padding-m);
   overflow: hidden;
-  box-shadow: 0 wp
-
 }
 
 .service-card:hover {
@@ -258,6 +256,10 @@ footer {
   padding: calc(var(--padding-s) / 2) var(--padding-s);
   display: inline;
   font-size: calc(var(--font-text) * 0.8);
+}
+
+.service-content {
+  padding: var(--padding-s);
 }
 
 .service-header, .service-content, .service-btn-wrapper {
