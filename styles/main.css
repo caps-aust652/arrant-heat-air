@@ -251,17 +251,9 @@ footer {
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
-.service-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.service-body {
-  padding: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
+.service-category {
+  border: 2px solid black;
+  border-radius: 50%;
 }
 
 .service-header, .service-content, .service-btn-wrapper {
