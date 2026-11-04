@@ -166,11 +166,11 @@ footer {
   transform: translate(-50%, -50%);
 
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-areas: 
-    "number      number"
-    "description description"
-    "button1     button2";
+    "number"
+    "description"
+    "button";
   gap: 16px;
   width: 90%;
 }
@@ -180,7 +180,7 @@ footer {
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
       "description description number number"
-      "button1     button2     number number";
+      "button     button     number number";
     column-gap: 32px;
     row-gap: 12px;
     align-items: center;
@@ -209,8 +209,8 @@ footer {
   font-size: clamp(1.1rem, 2vw, 1.5rem);
 }
 
-.btn-pri { grid-area: button1; }
-.btn-sec { grid-area: button2; }
+.btn-pri { grid-area: button; }
+.btn-sec { grid-area: button; }
 
 #introduction {
   display: grid;
@@ -277,9 +277,9 @@ button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 1rem 1.5rem;
+  padding: 0.5rem 0.75rem;
   font-family: inherit;
-  font-size: va(--font-text);
+  font-size: var(--font-text);
   font-weight: 600;
   line-height: 1.5;
   text-decoration: none;
@@ -289,6 +289,7 @@ button {
   border: 2px solid transparent;
   outline: none;
   white-space: nowrap;
+  width: fit-content;
 }
 
 .btn:focus-visible {
