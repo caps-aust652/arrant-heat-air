@@ -58,6 +58,10 @@
 .mr-bg { background-color: var(--microprose-red); }
 
 /* ------ STRUCTURAL LAYOUT ------ */
+body {
+  background-color: #f9fafb;
+}
+
 heading {
   position: sticky;
   top: 0;
