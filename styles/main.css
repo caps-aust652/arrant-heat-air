@@ -224,6 +224,12 @@ footer {
   font-size: clamp(1.1rem, 2vw, 1.5rem);
 }
 
+.btn-hero-group {
+  grid-area: button;
+  display: flex;
+  flex-direction: row;
+}
+
 .btn-pri { grid-area: button; }
 .btn-sec { grid-area: button; }
 
