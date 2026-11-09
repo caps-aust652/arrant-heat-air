@@ -80,8 +80,8 @@ heading > *:nth-child(2) {
 }
 
 .heading-logo-wrapper img {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: clamp(60px, 12vh, 100px);
 }
 
 .heading-content-wrapper {
