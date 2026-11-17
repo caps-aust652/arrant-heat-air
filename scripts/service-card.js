@@ -51,6 +51,8 @@ form.addEventListener('submit', (event) => {
   const searchQuery = formData.get('q').toLowerCase().trim()
 
   arrantServicesToDisplay = searchArrantServices(searchQuery);
+
+  renderServices()
 });
 
 function searchArrantServices(query) {
@@ -63,18 +65,22 @@ function searchArrantServices(query) {
 
 const arrantServicesGrid = document.getElementById("services-track");
 
-arrantServicesGrid.innerHTML = arrantServicesToDisplay.map(service => `
-  <div class="service-card">
-    <div class="service-header">
-      <h3 class="service-name">${service.name}</h3>
-      <p class="service-category">${service.category}</p>
-      <img class="service-image">
+function renderServices(
+  arrantServicesGrid.innerHTML = arrantServicesToDisplay.map(service => `
+    <div class="service-card">
+      <div class="service-header">
+        <h3 class="service-name">${service.name}</h3>
+        <p class="service-category">${service.category}</p>
+        <img class="service-image">
+      </div>
+      <div class="service-content">
+        <p class="service-description">${service.description}</p>
+      </div>
+      <div class="service-btn-wrapper">
+        <button>Explore Service</button>
+      </div>
     </div>
-    <div class="service-content">
-      <p class="service-description">${service.description}</p>
-    </div>
-    <div class="service-btn-wrapper">
-      <button>Explore Service</button>
-    </div>
-  </div>
-`).join('');
+  `).join('');
+);
+
+renderServices()
