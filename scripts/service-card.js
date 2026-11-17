@@ -37,9 +37,7 @@ const arrantServices = [
   }
 ];
 
-const arrantServicesNames = arrantServices.map(user => user.name);
-
-var arrantServicesToDisplay = [];
+var arrantServicesToDisplay = [...arrantServices];
 
 const form = document.querySelector('.search-form');
 
