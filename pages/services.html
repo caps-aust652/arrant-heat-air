@@ -29,15 +29,17 @@
       <div class="service-search-system">
         <div class="search-bar">
           <form role="search" action="/search" method="GET" class="search-form">
-            <label for="site-search" class="visually-hidden">Search the site</label>
-            <input 
-              type="search" 
-              id="site-search" 
-              name="q" 
-              placeholder="Search..." 
-              aria-label="Search through site content"
-              required
-            >
+            <div class="search-input-group">
+              <label for="site-search" class="visually-hidden">Search the site</label>
+              <input 
+                type="search" 
+                id="site-search" 
+                name="q" 
+                placeholder="Search..." 
+                aria-label="Search through site content"
+                required
+              >
+            </div>
             <button type="submit">Search</button>
           </form>
         </div>
@@ -46,7 +48,7 @@
         </div>
       </div>
 
-      <div>
+      <div class="service-search-results">
         <div class="current-search">
           <!-- Generated dynamically using JavaScript -->
         </div>
