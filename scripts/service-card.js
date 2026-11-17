@@ -65,7 +65,7 @@ function searchArrantServices(query) {
 
 const arrantServicesGrid = document.getElementById("services-track");
 
-function renderServices {
+function renderServices() {
   arrantServicesGrid.innerHTML = arrantServicesToDisplay.map(service => `
     <div class="service-card">
       <div class="service-header">
