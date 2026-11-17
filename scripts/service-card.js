@@ -56,7 +56,7 @@ form.addEventListener('submit', (event) => {
 function searchArrantServices(query) {
   const cleanQuery = query.toLowerCase().trim();
   
-  return arrantServicesNames.filter(item => 
+  return arrantServices.filter(item => 
     item.toLowerCase().includes(cleanQuery)
   );
 }
