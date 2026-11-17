@@ -59,13 +59,15 @@ function searchArrantServices(query) {
   const cleanQuery = query.toLowerCase().trim();
   
   return arrantServices.filter(item => 
-    item.toLowerCase().includes(cleanQuery)
+    item.name.toLowerCase().includes(cleanQuery) ||
+    item.category.toLowerCase().includes(cleanQuery) ||
+    item.description.toLowerCase().includes(cleanQuery)
   );
 }
 
 const arrantServicesGrid = document.getElementById("services-track");
 
-function renderServices(
+function renderServices {
   arrantServicesGrid.innerHTML = arrantServicesToDisplay.map(service => `
     <div class="service-card">
       <div class="service-header">
@@ -81,6 +83,6 @@ function renderServices(
       </div>
     </div>
   `).join('');
-);
+};
 
 renderServices()
