@@ -37,7 +37,7 @@ const arrantServices = [
   }
 ];
 
-const arrantServicesNames = arrantService.map(user => user.name);
+const arrantServicesNames = arrantServices.map(user => user.name);
 
 var arrantServicesToDisplay = [];
 
@@ -50,7 +50,7 @@ form.addEventListener('submit', (event) => {
 
   const searchQuery = formData.get('q').toLowerCase().trim()
 
-  arrantServicesToDisplay = searchItems(searchQuery);
+  arrantServicesToDisplay = searchArrantServices(searchQuery);
 });
 
 function searchArrantServices(query) {
@@ -63,7 +63,7 @@ function searchArrantServices(query) {
 
 const arrantServicesGrid = document.getElementById("services-track");
 
-arrantServicesGrid.innerHTML = arrantServiceToDisplay.map(service => `
+arrantServicesGrid.innerHTML = arrantServicesToDisplay.map(service => `
   <div class="service-card">
     <div class="service-header">
       <h3 class="service-name">${service.name}</h3>
