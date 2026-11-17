@@ -37,9 +37,33 @@ const arrantServices = [
   }
 ];
 
+const arrantServicesNames = arrantService.map(user => user.name);
+
+var arrantServicesToDisplay = [];
+
+const form = document.querySelector('.search-form');
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  
+  const formData = new FormData(form);
+
+  const searchQuery = formData.get('q').toLowerCase().trim()
+
+  arrantServicesToDisplay = searchItems(searchQuery);
+});
+
+function searchArrantServices(query) {
+  const cleanQuery = query.toLowerCase().trim();
+  
+  return arrantServicesNames.filter(item => 
+    item.toLowerCase().includes(cleanQuery)
+  );
+}
+
 const arrantServicesGrid = document.getElementById("services-track");
 
-arrantServicesGrid.innerHTML = arrantServices.map(service => `
+arrantServicesGrid.innerHTML = arrantServiceToDisplay.map(service => `
   <div class="service-card">
     <div class="service-header">
       <h3 class="service-name">${service.name}</h3>
