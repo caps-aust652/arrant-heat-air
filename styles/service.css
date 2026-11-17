@@ -2,3 +2,24 @@
   display: grid;
   grid-template-columns: 1fr 3fr;
 }
+
+.service-search-system {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-form {
+  display: flex;
+  flex-direction: row;
+}
+
+.search-input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.service-search-results {
+  display: grid;
+  grid-template-rows: 50px 1fr;
+}
+
