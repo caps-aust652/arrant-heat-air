@@ -46,7 +46,7 @@ form.addEventListener('submit', (event) => {
   
   const formData = new FormData(form);
 
-  const searchQuery = formData.get('q').toLowerCase().trim()
+  const searchQuery = formData.get('q')
 
   arrantServicesToDisplay = searchArrantServices(searchQuery);
 
