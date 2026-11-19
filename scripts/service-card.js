@@ -89,7 +89,7 @@ function renderServices() {
       <div class="service-header">
         <h3 class="service-name">${service.name}</h3>
         <p class="service-category">${service.category}</p>
-        <img class="service-image">
+        <img class="service-image" src="${service.link}">
       </div>
       <div class="service-content">
         <p class="service-description">${service.description}</p>
