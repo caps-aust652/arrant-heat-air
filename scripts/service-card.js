@@ -3,7 +3,7 @@ const arrantServices = [
     name: "Furnace Installation & Repair",
     category: "&#x2600;&#xfe0f; Heating",
     description: "Keep your home warm all winter with expert furnace installation, fast diagnostics, and reliable repairs for all major makes and models.",
-    link: "/services/lorem-one"
+    link: "../assets/card-images/fireplace.jpg"
   },
   {
     name: "Heat Pump Serices",
