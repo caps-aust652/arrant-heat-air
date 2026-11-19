@@ -1,39 +1,57 @@
 const arrantServices = [
   {
-    name: "Lorem Ipsum Dolor",
-    category: "&#x2744;&#xfe0f; Cooling",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    name: "Furnace Installation & Repair",
+    category: "&#x2600;&#xfe0f; Heating",
+    description: "Keep your home warm all winter with expert furnace installation, fast diagnostics, and reliable repairs for all major makes and models.",
     link: "/services/lorem-one"
   },
   {
-    name: "Consectetur Adipiscing",
+    name: "Heat Pump Serices",
     category: "&#x2600;&#xfe0f; Heating",
-    description: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    description: "Energy-efficient heating and cooling in one system, backged by certified installation, repairs, and seasonal tune-ups.",
     link: "/services/lorem-two"
   },
   {
-    name: "Sed Do Eiusmod",
+    name: "Geothermal Comfort Systems",
+    category: "&#x2600;&#xfe0f; Heating",
+    description: "Harness clean, sustainable underground energy with specialized installation and maintenance from certified geothermal professionals.",
+    link: "/services/lorem-two"
+  },
+  {
+    name: "Fireplace & Heating Stoves",
+    category: "&#x2600;&#xfe0f; Heating",
+    description: "Add warmth and ambiance to any room with safe, professional installation and routine servicing for fireplaces and heating stoves.",
+    link: "/services/lorem-two"
+  },
+  {
+    name: "Whole-House Humidifiers",
     category: "&#x1F343; Air Quality",
-    description: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    description: "Eliminate dry winter air and protect your home with whole-home humidifiers integrated directly into your ductwork and water supply.",
     link: "/services/lorem-three"
   },
   {
-    name: "Tempor Incididunt",
+    name: "Indoor Air Filtration & Quality",
+    category: "&#x1F343; Air Quality",
+    description: "Breathe cleaner, healthier indoor air with tailored air purification, filtration upgrades, and ventilation solutions.",
+    link: "/services/lorem-three"
+  },
+  {
+    name: "Custom Duct Fabrication",
+    category: "&#x1F343; Air Quality",
+    description: "Maximize your HVAC efficiency and indoor airflow with custom-built ductwork designed and installed specifically for your property.",
+    link: "/services/lorem-three"
+  },
+  {
+    name: "Central Air Conditioning",
     category: "&#x2744&#xfe0f; Cooling",
-    description: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    description: "Stay cool through the summer with complete AC system replacements, precision troubleshooting, and preventative maintenance.",
     link: "/services/lorem-four"
   },
   {
-    name: "Ut Labore Et Dolore",
-    category: "&#x2600;&#xfe0f Heating",
-    description: "Mollis pretium lorem primis senectus habitasse lectus scelerisque donec. Cubilia maecenas quisque sit efficitur habitant.",
-    link: "/services/lorem-five"
-  },
-  {
-    name: "Magna Aliqua Ut",
-    category: "&#x1F343; Air Quality",
-    description: "Phasellus vehicula litora tristique integer sed parturient. Semper morbi inceptos curae aliquet iaculis pretium cras.",
-    link: "/services/lorem-six"
+    name: "Ductless Mini-Split Systems",
+    category: "&#x2744&#xfe0f; Cooling",
+    description: "Enjoy customizable, zoned temperature control without bulky ductwork through expert ductless system installation and repair.",
+    link: "/services/lorem-four"
   }
 ];
 
